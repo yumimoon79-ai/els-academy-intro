@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="인천 남동구 구월동 ELS 영어수학학원 소개. 초등·중등·고등 영어와 수학, 개인별 학습 설계와 성장 관리." />
+  <meta property="og:title" content="ELS 영어수학학원 | 아이의 가능성을 디자인하다" />
+  <meta property="og:description" content="진단부터 학습 설계, 기록과 피드백까지 연결하는 구월동 영어수학학원입니다." />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <title>ELS 영어수학학원 | 학원소개</title>
+
+  <style>
+    :root {
+      --navy:#163a5f;
+      --blue:#2563eb;
+      --mint:#168579;
+      --gold:#d6932f;
+      --ink:#1f2a3a;
+      --muted:#667085;
+      --line:#e5eaf0;
+      --bg:#f6f8fb;
+      --white:#ffffff;
+      --radius:24px;
+      --shadow:0 18px 50px rgba(25, 48, 76, .10);
+      --max:1120px;
+    }
+
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      font-family:Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+      color:var(--ink);
+      background:var(--white);
+      line-height:1.75;
+      word-break:keep-all;
+    }
+    img { display:block; width:100%; }
+    a { color:inherit; text-decoration:none; }
+    .container { width:min(calc(100% - 36px), var(--max)); margin:auto; }
+
+    .topbar {
+      position:sticky; top:0; z-index:50;
+      background:rgba(255,255,255,.94);
+      border-bottom:1px solid rgba(229,234,240,.9);
+      backdrop-filter:blur(14px);
+    }
+    .nav {
+      min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px;
+    }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:900; color:var(--navy); }
+    .brand-mark {
+      width:42px; height:42px; display:grid; place-items:center;
+      border-radius:14px; background:linear-gradient(135deg,var(--navy),var(--mint));
+      color:white; letter-spacing:-1px;
+    }
+    .nav-links { display:flex; gap:24px; font-size:14px; font-weight:700; }
+    .nav-cta {
+      padding:11px 17px; border-radius:999px; color:white;
+      background:var(--navy); font-size:14px; font-weight:800;
+    }
+
+    .hero {
+      position:relative; min-height:680px; display:grid; align-items:center; overflow:hidden;
+      background:
+        linear-gradient(90deg,rgba(12,35,61,.90),rgba(12,35,61,.55) 48%,rgba(12,35,61,.15)),
+        url("assets/hero.jpg") center/cover no-repeat;
+      color:white;
+    }
+    .hero-content { max-width:760px; padding:92px 0; }
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 14px; border:1px solid rgba(255,255,255,.35);
+      border-radius:999px; background:rgba(255,255,255,.10);
+      font-size:14px; font-weight:800;
+    }
+    .hero h1 {
+      margin:22px 0 18px; font-size:clamp(42px,7vw,78px);
+      line-height:1.12; letter-spacing:-.055em;
+    }
+    .hero p { max-width:690px; margin:0 0 32px; font-size:clamp(18px,2.5vw,23px); color:#edf4fb; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-height:52px; padding:0 22px; border-radius:14px; font-weight:900;
+      transition:.2s ease;
+    }
+    .btn:hover { transform:translateY(-2px); }
+    .btn-primary { background:white; color:var(--navy); }
+    .btn-outline { border:1px solid rgba(255,255,255,.55); background:rgba(255,255,255,.08); color:white; }
+
+    section { padding:100px 0; }
+    .soft { background:var(--bg); }
+    .section-head { max-width:760px; margin-bottom:42px; }
+    .kicker { color:var(--mint); font-size:14px; font-weight:900; letter-spacing:.12em; }
+    h2 { margin:10px 0 14px; font-size:clamp(32px,5vw,50px); line-height:1.2; letter-spacing:-.045em; }
+    .lead { color:var(--muted); font-size:18px; margin:0; }
+
+    .two-col { display:grid; grid-template-columns:1.04fr .96fr; gap:52px; align-items:center; }
+    .photo { border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); }
+    .photo img { aspect-ratio:16/11; object-fit:cover; }
+    .quote {
+      margin:28px 0; padding:24px 26px; border-left:5px solid var(--mint);
+      border-radius:0 18px 18px 0; background:#eef8f6; font-size:19px; font-weight:800;
+    }
+    .checks { display:grid; gap:12px; padding:0; margin:24px 0 0; list-style:none; }
+    .checks li { display:flex; gap:12px; align-items:flex-start; }
+    .checks li::before {
+      content:"✓"; flex:none; width:26px; height:26px; display:grid; place-items:center;
+      border-radius:50%; background:#e3f4f0; color:var(--mint); font-weight:1000;
+    }
+
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .card {
+      background:white; border:1px solid var(--line); border-radius:var(--radius);
+      padding:30px; box-shadow:0 10px 30px rgba(25,48,76,.05);
+    }
+    .card-num {
+      width:48px; height:48px; display:grid; place-items:center; border-radius:16px;
+      background:#eaf1ff; color:var(--blue); font-weight:1000; margin-bottom:20px;
+    }
+    .card h3 { margin:0 0 10px; font-size:23px; }
+    .card p { margin:0; color:var(--muted); }
+
+    .programs { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    .program {
+      overflow:hidden; border:1px solid var(--line); border-radius:var(--radius); background:white;
+      box-shadow:0 12px 34px rgba(25,48,76,.06);
+    }
+    .program img { aspect-ratio:16/9; object-fit:cover; }
+    .program-body { padding:30px; }
+    .program h3 { margin:0 0 8px; font-size:29px; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 0; }
+    .tag { padding:7px 11px; border-radius:999px; background:#f1f5f9; color:#475467; font-size:13px; font-weight:800; }
+
+    .system-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:42px; align-items:center; }
+    .steps { display:grid; gap:14px; }
+    .step {
+      display:grid; grid-template-columns:46px 1fr; gap:15px;
+      padding:19px; border:1px solid var(--line); background:white; border-radius:18px;
+    }
+    .step span {
+      width:46px; height:46px; display:grid; place-items:center; border-radius:14px;
+      background:var(--navy); color:white; font-weight:1000;
+    }
+    .step h3 { margin:1px 0 3px; font-size:18px; }
+    .step p { margin:0; color:var(--muted); font-size:15px; }
+
+    .gallery { display:grid; grid-template-columns:1.3fr .7fr; gap:20px; }
+    .gallery .photo:first-child img { min-height:480px; object-fit:cover; }
+    .gallery-side { display:grid; gap:20px; }
+    .gallery-side img { aspect-ratio:16/10; object-fit:cover; }
+
+    .cta {
+      background:linear-gradient(135deg,#15385d,#147b73);
+      color:white; border-radius:34px; padding:54px; display:grid;
+      grid-template-columns:1fr auto; gap:30px; align-items:center;
+      box-shadow:var(--shadow);
+    }
+    .cta h2 { margin:0 0 10px; font-size:clamp(30px,5vw,48px); }
+    .cta p { margin:0; color:#e3f3f1; }
+    .cta-actions { display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end; }
+    .cta .btn-primary { min-width:150px; }
+    .cta .btn-outline { min-width:150px; }
+
+    footer { padding:42px 0 60px; color:#667085; font-size:14px; }
+    .footer-grid { display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+    .small-note { font-size:12px; color:#98a2b3; margin-top:12px; }
+
+    @media (max-width:900px) {
+      .nav-links { display:none; }
+      .two-col, .system-grid, .gallery, .cta { grid-template-columns:1fr; }
+      .cards { grid-template-columns:1fr; }
+      .programs { grid-template-columns:1fr; }
+      .cta-actions { justify-content:flex-start; }
+      .gallery .photo:first-child img { min-height:auto; }
+    }
+    @media (max-width:600px) {
+      .nav { min-height:62px; }
+      .nav-cta { padding:9px 12px; }
+      .hero { min-height:620px; }
+      .hero-content { padding:70px 0; }
+      section { padding:76px 0; }
+      .cta { padding:34px 25px; }
+      .card, .program-body { padding:24px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    가장 먼저 아래 4개 항목을 수정하세요.
+    1) 전화번호: tel 링크와 화면 표시 문구
+    2) 카카오톡 채널 URL
+    3) 네이버 지도/플레이스 URL
+    4) 주소 및 학원 정보
+  -->
+
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="페이지 처음으로">
+        <span class="brand-mark">ELS</span>
+        <span>ELS 영어수학학원</span>
+      </a>
+      <nav class="nav-links" aria-label="주요 메뉴">
+        <a href="#about">학원소개</a>
+        <a href="#philosophy">교육철학</a>
+        <a href="#program">프로그램</a>
+        <a href="#system">학습관리</a>
+      </nav>
+      <a class="nav-cta" href="#contact">상담 안내</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="eyebrow">인천 남동구 구월동 · 초등·중등·고등</span>
+        <h1>아이의 가능성을<br>디자인합니다.</h1>
+        <p>
+          영어와 수학 실력만 가르치는 데서 멈추지 않고,
+          아이가 스스로 성장할 수 있도록 진단·학습·기록·피드백을 연결합니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">학원 자세히 보기</a>
+          <a class="btn btn-outline" href="#contact">상담 방법 확인</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container two-col">
+        <div class="photo">
+          <img src="assets/director.jpg" alt="ELS 영어수학학원 원장 소개 사진" />
+        </div>
+        <div>
+          <span class="kicker">DIRECTOR STORY</span>
+          <h2>학생의 오늘과<br>내일을 함께 설계합니다.</h2>
+          <p class="lead">
+            안녕하세요. 아이의 가능성을 디자인하는 ELS 영어수학학원 Erica 쌤입니다.
+          </p>
+          <div class="quote">
+            "무조건 많이 시키기보다, 지금 이 아이에게 필요한 공부를 정확하게 설계합니다."
+          </div>
+          <p>
+            영어교육을 전공하고 교육대학원과 경영대학원에서 공부한 뒤,
+            20년 동안 사교육 현장에서 학생을 지도하고 학부모님과 상담해 왔습니다.
+            ELS는 아이가 학원에 다니는 시간뿐 아니라 혼자 공부하는 시간까지 달라질 수 있도록
+            올바른 학습 습관과 성장 과정을 함께 관리합니다.
+          </p>
+          <ul class="checks">
+            <li>학생별 현재 수준과 학습 습관 진단</li>
+            <li>학년과 목표에 맞는 개인별 학습 경로 설계</li>
+            <li>학부모가 확인할 수 있는 기록과 피드백 제공</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">OUR PHILOSOPHY</span>
+          <h2>성적과 성장 사이를 연결하는<br>세 가지 교육 원칙</h2>
+          <p class="lead">아이마다 출발점과 속도가 다르기 때문에 수업도 관리도 달라야 합니다.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-num">01</div>
+            <h3>정확한 진단</h3>
+            <p>학년만 보고 수업을 정하지 않습니다. 어휘, 독해, 문법, 연산, 개념, 문제 해결 과정까지 확인합니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-num">02</div>
+            <h3>개인별 학습 설계</h3>
+            <p>학생이 지금 해야 할 공부와 다음 단계의 목표가 연결되도록 교재, 진도, 과제와 평가를 구성합니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-num">03</div>
+            <h3>성장 과정 관리</h3>
+            <p>출결과 과제뿐 아니라 이해도, 실수 유형, 보완 내용과 학습 태도를 기록하여 지속적으로 피드백합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="program">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">PROGRAM</span>
+          <h2>학년별 목표에 맞춘<br>영어·수학 프로그램</h2>
+          <p class="lead">기초를 채우고, 학교 성적을 준비하고, 다음 학년의 실력으로 이어지게 합니다.</p>
+        </div>
+
+        <div class="programs">
+          <article class="program">
+            <img src="assets/english-class.jpg" alt="ELS 영어 프로그램 수업 이미지" />
+            <div class="program-body">
+              <h3>영어 프로그램</h3>
+              <p>
+                초등 파닉스와 리딩 기초부터 중등 학교별 내신, 고등 구문 독해와 모의고사까지
+                어휘·독해·문법·쓰기 영역을 균형 있게 연결합니다.
+              </p>
+              <div class="tags">
+                <span class="tag">파닉스</span>
+                <span class="tag">어휘</span>
+                <span class="tag">독해</span>
+                <span class="tag">문법</span>
+                <span class="tag">학교별 내신</span>
+                <span class="tag">모의고사</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="program">
+            <img src="assets/math-class.jpg" alt="ELS 수학 프로그램 수업 이미지" />
+            <div class="program-body">
+              <h3>수학 프로그램</h3>
+              <p>
+                단순 문제 반복보다 개념을 설명하고 적용하는 힘을 먼저 길러
+                유형 학습, 오답 분석, 시험 대비까지 단계적으로 연결합니다.
+              </p>
+              <div class="tags">
+                <span class="tag">연산</span>
+                <span class="tag">개념 이해</span>
+                <span class="tag">유형 적용</span>
+                <span class="tag">오답 관리</span>
+                <span class="tag">내신 대비</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="soft">
+      <div class="container system-grid">
+        <div>
+          <span class="kicker">LEARNING SYSTEM</span>
+          <h2>학원에 다닌 시간이<br>성장 기록으로 남도록</h2>
+          <p class="lead">
+            학습 결과만 전달하지 않고, 무엇을 배웠고 어떤 부분을 보완해야 하는지 과정까지 관리합니다.
+          </p>
+          <div class="steps" style="margin-top:30px">
+            <div class="step">
+              <span>1</span><div><h3>수준과 습관 진단</h3><p>현재 실력과 공부 방식, 목표를 함께 점검합니다.</p></div>
+            </div>
+            <div class="step">
+              <span>2</span><div><h3>개인별 수업·과제 설계</h3><p>수업 진도와 스스로 해야 할 학습을 연결합니다.</p></div>
+            </div>
+            <div class="step">
+              <span>3</span><div><h3>테스트와 오답 보완</h3><p>실수를 분류하고 다시 공부할 내용을 명확히 합니다.</p></div>
+            </div>
+            <div class="step">
+              <span>4</span><div><h3>학부모 피드백</h3><p>주간 학습 리포트와 상담을 통해 성장 과정을 공유합니다.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/learning-system.jpg" alt="ELS 학습관리 시스템 이미지" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">CLASSROOM</span>
+          <h2>아이가 실제로 공부하는<br>공간과 수업의 모습</h2>
+          <p class="lead">아래 이미지를 교실, 학생 수업, 개별 코칭 사진으로 교체해 주세요.</p>
+        </div>
+        <div class="gallery">
+          <div class="photo">
+            <img src="assets/academy-space.jpg" alt="ELS 학원 교실과 수업 모습" />
+          </div>
+          <div class="gallery-side">
+            <div class="photo"><img src="assets/english-class.jpg" alt="영어 수업 모습" /></div>
+            <div class="photo"><img src="assets/math-class.jpg" alt="수학 수업 모습" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="padding-top:35px">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>우리 아이에게 필요한<br>학습 방향부터 상담하세요.</h2>
+            <p>무조건적인 등록 권유보다 현재 수준과 필요한 학습 방향을 먼저 안내합니다.</p>
+          </div>
+          <div class="cta-actions">
+            <!-- 아래 전화번호를 실제 상담 번호로 변경하세요. -->
+            <a class="btn btn-primary" href="tel:0324650182">전화 상담</a>
+
+            <a class="btn btn-outline" href="http://pf.kakao.com/_xoxiNLn" target="_blank" rel="noopener">카카오톡 상담</a>
+
+            <a class="btn btn-outline" href="https://m.place.naver.com/place/1787496079/home" target="_blank" rel="noopener">학원 위치</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>윤선생IGSE아카데미인천구월학원 · ELS 영어수학학원</strong><br />
+        인천시 남동구 구월로212 힐캐슬프라자 3층 309호<br />
+        초등·중등·고등 영어·수학
+        <div class="small-note">전화번호는 실제 상담 번호로 수정해 주세요.</div>
+      </div>
+      <div>© <span id="year"></span> ELS Academy. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
