@@ -339,6 +339,15 @@
       .mobile-bar{display:flex;}
       footer{padding-bottom:92px;}
     }
+
+    /* 사진 이미지 (SVG 대체) */
+    .program-art{padding:0 !important;}
+    .program-art .art-img{width:100%;height:255px;object-fit:cover;display:block;}
+    .hero-visual .hero-img{width:100%;display:block;border-radius:20px;aspect-ratio:4/3;object-fit:cover;}
+    .feature-visual .feature-img{width:100%;display:block;border-radius:18px;aspect-ratio:4/5;object-fit:cover;}
+    @media (max-width:640px){
+      .program-art .art-img{height:210px;}
+    }
   </style>
 </head>
 
@@ -384,54 +393,7 @@
 
         <div class="hero-visual">
           <div class="hero-sticker">매일의 학습이 성장 기록으로!</div>
-          <svg viewBox="0 0 620 470" role="img" aria-label="학생의 학습과 성장을 표현한 일러스트">
-            <defs>
-              <linearGradient id="desk" x1="0" x2="1">
-                <stop offset="0" stop-color="#dcedfb"/>
-                <stop offset="1" stop-color="#fff6c9"/>
-              </linearGradient>
-            </defs>
-            <rect x="10" y="10" width="600" height="450" rx="34" fill="url(#desk)"/>
-            <circle cx="500" cy="82" r="34" fill="#ffd85a"/>
-            <circle cx="95" cy="80" r="10" fill="#64addf" opacity=".55"/>
-            <circle cx="535" cy="165" r="9" fill="#2e9b7b" opacity=".5"/>
-
-            <rect x="78" y="275" width="470" height="92" rx="24" fill="#ffffff"/>
-            <rect x="102" y="250" width="176" height="112" rx="17" fill="#123b63"/>
-            <rect x="116" y="264" width="148" height="82" rx="10" fill="#eaf5ff"/>
-            <rect x="132" y="281" width="96" height="10" rx="5" fill="#1e6fb7"/>
-            <rect x="132" y="300" width="73" height="8" rx="4" fill="#93c3e7"/>
-            <rect x="132" y="317" width="112" height="8" rx="4" fill="#bdd9ee"/>
-
-            <circle cx="370" cy="170" r="61" fill="#ffd6b5"/>
-            <path d="M316 170c2-57 29-83 57-83 38 0 63 27 61 77-24-13-40-43-45-57-14 31-38 47-73 63z" fill="#263a54"/>
-            <circle cx="349" cy="174" r="5" fill="#253344"/>
-            <circle cx="394" cy="174" r="5" fill="#253344"/>
-            <path d="M355 199c11 11 25 11 36 0" fill="none" stroke="#b56f65" stroke-width="4" stroke-linecap="round"/>
-
-            <path d="M308 329c8-74 35-109 69-109 41 0 72 42 77 109z" fill="#1e6fb7"/>
-            <path d="M337 251l37 37 39-38" fill="#ffffff" opacity=".9"/>
-            <path d="M315 290l-76 37" fill="none" stroke="#ffd6b5" stroke-width="22" stroke-linecap="round"/>
-            <path d="M439 287l80 37" fill="none" stroke="#ffd6b5" stroke-width="22" stroke-linecap="round"/>
-
-            <rect x="418" y="272" width="96" height="63" rx="10" fill="#ffd85a" transform="rotate(8 418 272)"/>
-            <line x1="436" y1="291" x2="489" y2="299" stroke="#9b7b13" stroke-width="5" stroke-linecap="round"/>
-            <line x1="434" y1="307" x2="482" y2="314" stroke="#c29f2b" stroke-width="4" stroke-linecap="round"/>
-
-            <g transform="translate(70 105)">
-              <rect width="150" height="105" rx="18" fill="#ffffff"/>
-              <rect x="18" y="20" width="70" height="10" rx="5" fill="#123b63"/>
-              <rect x="18" y="42" width="112" height="8" rx="4" fill="#c5dcec"/>
-              <rect x="18" y="59" width="84" height="8" rx="4" fill="#c5dcec"/>
-              <circle cx="117" cy="76" r="18" fill="#2e9b7b"/>
-              <path d="M108 76l6 6 12-15" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-
-            <g transform="translate(442 360)">
-              <rect width="112" height="52" rx="16" fill="#ffffff"/>
-              <text x="56" y="33" text-anchor="middle" font-size="18" font-weight="800" fill="#123b63">오늘도 완료!</text>
-            </g>
-          </svg>
+          <img class="hero-img" src="assets/hero.jpg" alt="구월동 ELS 영어수학학원 수업 공간" loading="lazy" />
         </div>
       </div>
     </section>
@@ -462,24 +424,7 @@
           <!-- 초등 영어 -->
           <article class="program-card">
             <div class="program-art">
-              <svg viewBox="0 0 520 280" role="img" aria-label="초등 영어 리딩 학습 일러스트">
-                <rect x="35" y="28" width="450" height="225" rx="28" fill="#fff"/>
-                <circle cx="132" cy="120" r="48" fill="#ffd6b5"/>
-                <path d="M88 116c0-45 20-67 46-67 31 0 48 24 46 66-20-11-34-30-38-42-12 26-27 36-54 43z" fill="#384b63"/>
-                <circle cx="117" cy="121" r="4" fill="#293744"/>
-                <circle cx="146" cy="121" r="4" fill="#293744"/>
-                <path d="M119 142c8 7 17 7 25 0" fill="none" stroke="#b56f65" stroke-width="3" stroke-linecap="round"/>
-                <path d="M82 231c4-55 24-84 53-84 31 0 51 31 54 84z" fill="#4da1d8"/>
-                <path d="M106 163l28 28 29-28" fill="#fff"/>
-                <path d="M190 188c30-18 59-24 91-18v73c-35-5-66 2-91 18z" fill="#123b63"/>
-                <path d="M190 188c-30-18-59-24-91-18v73c35-5 66 2 91 18z" fill="#1e6fb7"/>
-                <line x1="190" y1="188" x2="190" y2="261" stroke="#d5e9f8" stroke-width="4"/>
-                <text x="355" y="88" text-anchor="middle" font-size="30" font-weight="900" fill="#123b63">READ</text>
-                <rect x="296" y="110" width="120" height="11" rx="5" fill="#9cc8e7"/>
-                <rect x="315" y="132" width="82" height="9" rx="4" fill="#c8dfef"/>
-                <rect x="332" y="155" width="48" height="48" rx="15" fill="#ffd85a"/>
-                <text x="356" y="188" text-anchor="middle" font-size="30">★</text>
-              </svg>
+              <img class="art-img" src="assets/english-class.jpg" alt="초등 영어 수업 모습" loading="lazy" />
             </div>
             <div class="program-content">
               <div class="program-top">
@@ -508,26 +453,7 @@
           <!-- 중등 영어 -->
           <article class="program-card">
             <div class="program-art">
-              <svg viewBox="0 0 520 280" role="img" aria-label="중등 영어 내신 대비 일러스트">
-                <rect x="34" y="28" width="452" height="224" rx="28" fill="#fff"/>
-                <rect x="64" y="55" width="220" height="168" rx="20" fill="#f7fbff" stroke="#d8e7f2" stroke-width="3"/>
-                <text x="86" y="88" font-size="20" font-weight="900" fill="#123b63">SCHOOL TEST</text>
-                <rect x="86" y="107" width="155" height="9" rx="4" fill="#9ec7e4"/>
-                <rect x="86" y="128" width="130" height="9" rx="4" fill="#c9ddea"/>
-                <rect x="86" y="149" width="147" height="9" rx="4" fill="#c9ddea"/>
-                <circle cx="100" cy="184" r="11" fill="none" stroke="#1e6fb7" stroke-width="4"/>
-                <path d="M93 184l5 5 10-13" fill="none" stroke="#1e6fb7" stroke-width="3" stroke-linecap="round"/>
-                <rect x="123" y="178" width="106" height="10" rx="5" fill="#9ec7e4"/>
-                <circle cx="361" cy="110" r="51" fill="#ffd6b5"/>
-                <path d="M314 104c2-43 22-65 49-65 30 0 51 23 49 64-18-10-32-28-37-40-10 23-29 35-61 41z" fill="#293a50"/>
-                <circle cx="345" cy="111" r="4" fill="#293744"/>
-                <circle cx="378" cy="111" r="4" fill="#293744"/>
-                <path d="M347 132c9 8 18 8 27 0" fill="none" stroke="#b56f65" stroke-width="3" stroke-linecap="round"/>
-                <path d="M304 225c5-60 25-91 59-91 36 0 59 34 63 91z" fill="#123b63"/>
-                <path d="M329 151l34 31 34-31" fill="#fff"/>
-                <rect x="321" y="183" width="84" height="48" rx="10" fill="#ffd85a" transform="rotate(-7 321 183)"/>
-                <text x="363" y="214" text-anchor="middle" font-size="19" font-weight="900" fill="#55490b">A+</text>
-              </svg>
+              <img class="art-img" src="assets/academy-space.jpg" alt="중등 영어 학습 공간" loading="lazy" />
             </div>
             <div class="program-content">
               <div class="program-top">
@@ -556,26 +482,7 @@
           <!-- 고등 영어 -->
           <article class="program-card">
             <div class="program-art">
-              <svg viewBox="0 0 520 280" role="img" aria-label="고등 영어 지문 분석 일러스트">
-                <rect x="35" y="28" width="450" height="225" rx="28" fill="#fff"/>
-                <rect x="66" y="53" width="253" height="172" rx="18" fill="#f8f8ff" stroke="#dfe1f6" stroke-width="3"/>
-                <rect x="87" y="76" width="116" height="11" rx="5" fill="#5969b4"/>
-                <rect x="87" y="103" width="202" height="8" rx="4" fill="#c7cae8"/>
-                <rect x="87" y="122" width="177" height="8" rx="4" fill="#c7cae8"/>
-                <rect x="87" y="141" width="195" height="8" rx="4" fill="#c7cae8"/>
-                <rect x="87" y="160" width="151" height="8" rx="4" fill="#c7cae8"/>
-                <rect x="87" y="179" width="187" height="8" rx="4" fill="#c7cae8"/>
-                <path d="M231 99l36 95" stroke="#ffcc54" stroke-width="8" stroke-linecap="round" opacity=".8"/>
-                <circle cx="379" cy="114" r="51" fill="#ffd6b5"/>
-                <path d="M332 106c2-44 23-66 49-66 30 0 51 24 49 65-20-10-34-30-38-42-11 25-28 37-60 43z" fill="#2d3549"/>
-                <circle cx="363" cy="115" r="4" fill="#293744"/>
-                <circle cx="396" cy="115" r="4" fill="#293744"/>
-                <path d="M365 135c9 8 18 8 27 0" fill="none" stroke="#b56f65" stroke-width="3" stroke-linecap="round"/>
-                <path d="M325 225c5-59 24-90 56-90 36 0 58 34 63 90z" fill="#5969b4"/>
-                <path d="M347 153l34 31 34-31" fill="#fff"/>
-                <circle cx="430" cy="197" r="33" fill="#ffd85a"/>
-                <path d="M414 198l10 10 20-27" fill="none" stroke="#51490b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <img class="art-img" src="assets/learning-system.jpg" alt="고등 영어 학습 관리 모습" loading="lazy" />
             </div>
             <div class="program-content">
               <div class="program-top">
@@ -604,23 +511,7 @@
           <!-- 수학 -->
           <article class="program-card">
             <div class="program-art">
-              <svg viewBox="0 0 520 280" role="img" aria-label="수학 개념과 문제 풀이 일러스트">
-                <rect x="35" y="28" width="450" height="225" rx="28" fill="#fff"/>
-                <rect x="65" y="55" width="220" height="168" rx="20" fill="#f2fbf7" stroke="#d4eee4" stroke-width="3"/>
-                <path d="M91 190l58-98 62 98z" fill="none" stroke="#2e9b7b" stroke-width="7" stroke-linejoin="round"/>
-                <circle cx="151" cy="142" r="30" fill="none" stroke="#7bc5ad" stroke-width="6"/>
-                <text x="89" y="91" font-size="20" font-weight="900" fill="#176d54">개념 → 적용</text>
-                <text x="152" y="211" text-anchor="middle" font-size="16" font-weight="800" fill="#176d54">WHY를 이해하는 수학</text>
-                <circle cx="373" cy="109" r="51" fill="#ffd6b5"/>
-                <path d="M327 104c2-44 21-65 48-65 31 0 50 24 49 64-19-10-32-28-37-40-11 24-28 35-60 41z" fill="#2a3b48"/>
-                <circle cx="357" cy="112" r="4" fill="#293744"/>
-                <circle cx="390" cy="112" r="4" fill="#293744"/>
-                <path d="M359 133c9 8 18 8 27 0" fill="none" stroke="#b56f65" stroke-width="3" stroke-linecap="round"/>
-                <path d="M318 226c4-59 25-91 58-91 36 0 58 34 63 91z" fill="#2e9b7b"/>
-                <path d="M343 153l33 31 34-31" fill="#fff"/>
-                <rect x="333" y="179" width="90" height="54" rx="10" fill="#123b63" transform="rotate(6 333 179)"/>
-                <text x="378" y="213" text-anchor="middle" font-size="20" font-weight="900" fill="#fff">100</text>
-              </svg>
+              <img class="art-img" src="assets/math-class.jpg" alt="수학 수업 모습" loading="lazy" />
             </div>
             <div class="program-content">
               <div class="program-top">
@@ -692,33 +583,7 @@
     <section class="section">
       <div class="wrap feature-layout">
         <div class="feature-visual">
-          <svg viewBox="0 0 520 470" role="img" aria-label="학생 학습 리포트와 코칭을 표현한 일러스트">
-            <rect x="37" y="28" width="446" height="412" rx="34" fill="#fff"/>
-            <rect x="72" y="68" width="376" height="66" rx="20" fill="#123b63"/>
-            <circle cx="111" cy="101" r="19" fill="#ffd85a"/>
-            <rect x="146" y="84" width="184" height="11" rx="5" fill="#fff"/>
-            <rect x="146" y="105" width="124" height="8" rx="4" fill="#b8d8ef"/>
-
-            <rect x="72" y="158" width="176" height="118" rx="20" fill="#eaf5ff"/>
-            <text x="92" y="187" font-size="17" font-weight="900" fill="#123b63">이번 주 학습</text>
-            <rect x="92" y="207" width="116" height="10" rx="5" fill="#8abde2"/>
-            <rect x="92" y="228" width="84" height="10" rx="5" fill="#bfd9eb"/>
-            <rect x="92" y="249" width="132" height="10" rx="5" fill="#bfd9eb"/>
-
-            <rect x="272" y="158" width="176" height="118" rx="20" fill="#fff5c9"/>
-            <text x="292" y="187" font-size="17" font-weight="900" fill="#665610">성장 포인트</text>
-            <circle cx="310" cy="225" r="23" fill="#ffd85a"/>
-            <path d="M299 225l7 7 15-20" fill="none" stroke="#5b4b06" stroke-width="5" stroke-linecap="round"/>
-            <rect x="344" y="210" width="79" height="9" rx="4" fill="#d6bc4e"/>
-            <rect x="344" y="232" width="58" height="9" rx="4" fill="#e3d184"/>
-
-            <rect x="72" y="300" width="376" height="102" rx="20" fill="#f2fbf7"/>
-            <text x="92" y="328" font-size="17" font-weight="900" fill="#176d54">다음 학습 목표</text>
-            <rect x="92" y="348" width="248" height="11" rx="5" fill="#79c3aa"/>
-            <rect x="92" y="371" width="188" height="10" rx="5" fill="#b8ded1"/>
-            <circle cx="404" cy="351" r="25" fill="#2e9b7b"/>
-            <text x="404" y="359" text-anchor="middle" font-size="23" font-weight="900" fill="#fff">GO</text>
-          </svg>
+          <img class="feature-img" src="assets/director.jpg" alt="ELS 영어수학학원 선생님" loading="lazy" />
         </div>
 
         <div>
