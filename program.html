@@ -230,6 +230,7 @@
     }
     .feature-item h4{margin:1px 0 5px;color:var(--navy);font-size:18px;}
     .feature-item p{margin:0;color:var(--muted);font-size:14px;}
+    .feature-list--grid{grid-template-columns:1fr 1fr;max-width:1000px;margin:22px auto 0;}
 
     /* 변화 */
     .change-grid{display:grid;grid-template-columns:1fr 64px 1fr;gap:20px;align-items:stretch;}
@@ -334,6 +335,7 @@
       .program-content h3{font-size:24px;}
       .system-grid{grid-template-columns:1fr;}
       .feature-item{grid-template-columns:42px 1fr;padding:16px;}
+      .feature-list--grid{grid-template-columns:1fr;}
       .feature-icon{width:42px;height:42px;}
       .cta-box{padding:46px 20px;}
       .mobile-bar{display:flex;}
@@ -581,18 +583,13 @@
 
     <!-- 차별화 -->
     <section class="section">
-      <div class="wrap feature-layout">
-        <div class="feature-visual">
-          <img class="feature-img" src="assets/director.jpg" alt="ELS 영어수학학원 선생님" loading="lazy" />
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">WHY ELS?</span>
+          <h2>학부모님이 안심할 수 있도록<br>과정을 보여드립니다</h2>
         </div>
 
-        <div>
-          <span class="eyebrow">WHY ELS?</span>
-          <h2 style="margin:14px 0 22px;color:var(--navy);font-size:clamp(30px,4vw,44px);line-height:1.25;letter-spacing:-.04em;">
-            학부모님이 안심할 수 있도록<br>과정을 보여드립니다
-          </h2>
-
-          <div class="feature-list">
+        <div class="feature-list feature-list--grid">
             <div class="feature-item">
               <div class="feature-icon">📘</div>
               <div>
@@ -625,7 +622,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
